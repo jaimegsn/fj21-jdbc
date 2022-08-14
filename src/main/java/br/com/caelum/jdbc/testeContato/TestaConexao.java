@@ -1,4 +1,4 @@
-package br.com.caelum.jdbc.teste;
+package br.com.caelum.jdbc.testeContato;
 
 import br.com.caelum.jdbc.ConnectionFactory;
 

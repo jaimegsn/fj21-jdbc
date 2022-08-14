@@ -2,6 +2,8 @@ package br.com.caelum.jdbc.modelo;
 
 
 import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 public class Contato {
     private String nome;
@@ -31,6 +33,12 @@ public class Contato {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public String getDataNascimentoFormatted() {
+        String mascara = "dd/MM/YYYY";
+        SimpleDateFormat sdf = new SimpleDateFormat(mascara);
+        return sdf.format(this.dataNascimento);
     }
 
     public Date getDataNascimento() {

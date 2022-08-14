@@ -8,4 +8,11 @@ email VARCHAR(255),
 endereco VARCHAR(255),
 dataNascimento DATE
 );
+
+CREATE TABLE IF NOT EXISTS funcionario (
+id INT AUTO_INCREMENT NOT NULL PRIMARY KEY UNIQUE,
+nome VARCHAR(30),
+usuario VARCHAR(15),
+senha VARCHAR(15)
+);
 ```
